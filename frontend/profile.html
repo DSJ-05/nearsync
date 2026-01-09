@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Events - Nearsync</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Nearsync</div>
+    <ul class="nav-menu">
+      <li><a href="index.html">🏠</a></li>
+      <li><a href="create.html">➕</a></li>
+      <li><a href="profile.html" class="active">👤</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="feed-container">
+  <h2 style="margin-bottom:1rem;">My Events</h2>
+
+  <div id="profileEvents"></div>
+
+  <p id="noMyEvents" style="display:none;text-align:center;color:#64748b;">
+    You haven’t created any events yet.
+  </p>
+</main>
+
+<script src="profile.js"></script>
+</body>
+</html>

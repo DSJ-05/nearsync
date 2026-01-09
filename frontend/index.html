@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearsync - Discover Events Near You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Nearsync</div>
+            <div class="nav-search">
+                <input type="text" id="searchBar" placeholder="🔍 Search events...">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">🏠</a></li>
+                <li><a href="create.html">➕</a></li>
+                <li><a href="profile.html">👤</a></li>
+                <li><a href="#" id="logoutBtn">🚪</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+    <main class="feed-container">
+        <!-- Stories/Categories Section -->
+        <div class="stories-section">
+            <div class="stories-wrapper">
+                <div class="story-item" data-category="">
+                    <div class="story-circle" style="background: linear-gradient(135deg, #667eea, #764ba2)">
+                        <span>🌟</span>
+                    </div>
+                    <span class="story-label">All</span>
+                </div>
+                <div class="story-item" data-category="music">
+                    <div class="story-circle" style="background: linear-gradient(135deg, #f093fb, #f5576c)">
+                        <span>🎵</span>
+                    </div>
+                    <span class="story-label">Music</span>
+                </div>
+                <div class="story-item" data-category="sports">
+                    <div class="story-circle" style="background: linear-gradient(135deg, #4facfe, #00f2fe)">
+                        <span>⚽</span>
+                    </div>
+                    <span class="story-label">Sports</span>
+                </div>
+                <div class="story-item" data-category="tech">
+                    <div class="story-circle" style="background: linear-gradient(135deg, #43e97b, #38f9d7)">
+                        <span>💻</span>
+                    </div>
+                    <span class="story-label">Tech</span>
+                </div>
+                <div class="story-item" data-category="food">
+                    <div class="story-circle" style="background: linear-gradient(135deg, #fa709a, #fee140)">
+                        <span>🍕</span>
+                    </div>
+                    <span class="story-label">Food</span>
+                </div>
+                <div class="story-item" data-category="arts">
+                    <div class="story-circle" style="background: linear-gradient(135deg, #30cfd0, #330867)">
+                        <span>🎨</span>
+                    </div>
+                    <span class="story-label">Arts</span>
+                </div>
+                <div class="story-item" data-category="education">
+                    <div class="story-circle" style="background: linear-gradient(135deg, #a8edea, #fed6e3)">
+                        <span>📚</span>
+                    </div>
+                    <span class="story-label">Education</span>
+                </div>
+                <div class="story-item" data-category="school">
+                    <div class="story-circle" style="background: linear-gradient(135deg, #fbc2eb, #a6c1ee)">
+                        <span>🏫</span>
+                    </div>
+                    <span class="story-label">School</span>
+                </div>
+                <div class="story-item" data-category="college">
+                    <div class="story-circle" style="background: linear-gradient(135deg, #fdcbf1, #e6dee9)">
+                        <span>🎓</span>
+                    </div>
+                    <span class="story-label">College</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feed Posts -->
+        <div id="feedContainer" class="feed-posts">
+            <!-- Posts will be loaded here -->
+        </div>
+
+        <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading events...</p>
+        </div>
+
+        <div id="noEvents" class="no-events" style="display: none;">
+            <p>No events found. Be the first to create one!</p>
+            <a href="create.html" class="btn btn-primary">Create Event</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

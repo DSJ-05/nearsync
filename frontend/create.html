@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Event - Nearsync</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Nearsync</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="create.html" class="active">Create Event</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="container">
+    <div class="create-event-container">
+      <h1>Create New Event</h1>
+
+      <form id="createEventForm">
+
+        <div class="form-group">
+          <label>Event Title *</label>
+          <input type="text" id="title" required />
+        </div>
+
+        <div class="form-group">
+          <label>Description *</label>
+          <textarea id="description" rows="4" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Date *</label>
+            <input type="date" id="date" required />
+          </div>
+
+          <div class="form-group">
+            <label>Time *</label>
+            <input type="time" id="time" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Location *</label>
+          <input type="text" id="location" required />
+        </div>
+
+        <div class="form-group">
+          <label>Organized By *</label>
+          <input type="text" id="organizer" required />
+        </div>
+
+        <div class="form-group">
+          <label>Category *</label>
+          <select id="category" required>
+            <option value="">Select category</option>
+            <option value="music">Music</option>
+            <option value="sports">Sports</option>
+            <option value="tech">Tech</option>
+            <option value="food">Food</option>
+            <option value="arts">Arts</option>
+            <option value="education">Education</option>
+            <option value="school">School</option>
+            <option value="college">College</option>
+            <option value="social">Social</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Event Image URL (Optional)</label>
+          <input
+            type="text"
+            id="image"
+            placeholder="Paste image URL here"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Max Attendees (Optional)</label>
+          <input type="number" id="maxAttendees" min="1" />
+        </div>
+
+        <div class="form-group">
+          <label>Entry Fee (₹)</label>
+          <input type="number" id="price" min="0" value="0" />
+        </div>
+
+        <div class="form-group">
+          <label>Contact Information</label>
+          <input type="text" id="contact" />
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Create Event</button>
+          <button type="button" class="btn btn-secondary" onclick="window.location.href='index.html'">
+            Cancel
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <!-- MESSAGE MODAL -->
+  <div id="messageModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalMessage"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

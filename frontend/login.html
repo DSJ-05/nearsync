@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login / Sign Up - Nearsync</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <div class="create-event-container">
+
+      <h1 id="formTitle">Login</h1>
+
+      <form id="authForm">
+
+        <!-- EMAIL -->
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <!-- USERNAME (ONLY FOR SIGN UP) -->
+        <div class="form-group" id="usernameField" style="display: none;">
+          <label>Username</label>
+          <input type="text" id="username" />
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="password" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="submitBtn">
+          Login
+        </button>
+      </form>
+
+      <p style="margin-top:1rem;">
+        <span id="toggleText">New here?</span>
+        <a href="#" id="toggleMode">Sign up</a>
+      </p>
+
+    </div>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
